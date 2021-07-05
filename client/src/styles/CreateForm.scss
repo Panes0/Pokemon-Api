@@ -1,0 +1,98 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: auto;
+    align-content: center;
+    margin-top: 100px;
+    .name {
+        width: 50%;
+        height: 100%;
+        border-color: transparent;
+        border-radius: 15px;
+
+        font-size: 150%;
+
+        background-color: rgba($color: #ffffff, $alpha: 0.8);
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        text-align: center;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .stats {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: auto;
+        align-content: flex-start;
+        margin: 10px;
+
+        label {
+            color: whitesmoke;
+            font-weight: bold;
+        }
+        .bar {
+            border: none;
+            border-radius: 5px;
+            width: 50px;
+            margin-right: 10px;
+        }
+    }
+
+    .weight-height {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        label {
+            color: whitesmoke;
+            font-weight: bold;
+        }
+        input {
+            border: none;
+            border-radius: 5px;
+            margin-right: 15px;
+            align-content: center;
+            width: 100px;
+        }
+    }
+
+    .types {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: auto;
+        align-content: center;
+    }
+}
+.submit-btn {
+    background-color: #ffff00;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 300ms;
+    &:hover {
+        background-color: #000000;
+        border-color: #ffff00;
+        color: #ffff00;
+    }
+}
